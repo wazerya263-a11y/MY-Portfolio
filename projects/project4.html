@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Dev Books Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #fff;
+    }
+
+    /* 🔹 شريط علوي ثابت */
+    header {
+      background: #0f172a; 
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #3a6cf4;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* 🔹 المسافة لتحت عشان المحتوى ما يختفيش ورا الهيدر */
+    .container {
+      max-width: 1100px;
+      margin: 120px auto 50px; /* 120px عشان يسيب مساحة للـ header */
+      padding: 30px;
+      background: #1e293b;
+      border-radius: 15px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 2.5em;
+      color: #3a6cf4;
+      margin-bottom: 15px;
+    }
+
+    .container p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin: 15px 0;
+      color: #cbd5e1;
+    }
+
+    /* 🔹 معرض الصور */
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .project-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    }
+
+    /* 🔹 زر الرجوع */
+    .btn-back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #3a6cf4;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔹 الشريط العلوي -->
+  <header>
+    <h2>Project Details</h2>
+  </header>
+
+  <!-- 🔹 المحتوى -->
+  <div class="container">
+    <h1>Dev Books Dashboard</h1>
+    <p>
+      This dashboard provides insights into book sales, customer trends, and revenue analysis.  
+      It helps in making data-driven decisions for business growth.
+    </p>
+    <p><strong>Technologies Used:</strong> Power BI, Excel</p>
+    <p><strong>Category:</strong> Data Analysis & Visualization</p>
+
+    <div class="project-gallery">
+      <img src="./Screenshot 2025-09-21 090004.png" alt="Dashboard Screenshot 1">
+      <img src="./Screenshot 2025-09-21 090050.png" alt="Dashboard Screenshot 2">
+    </div>
+
+    <a href="../index.html#projects" class="btn-back">⬅ Back to Projects</a>
+  </div>
+</body>
+</html>

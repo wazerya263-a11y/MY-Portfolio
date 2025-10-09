@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Books Dashboard | Project Details</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #0a192f;
+      color: #e2e8f0;
+    }
+
+    /* 🔹 الشريط العلوي */
+    header {
+      background: rgba(15, 23, 42, 0.95);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px 0;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* 🔹 المحتوى */
+    .container {
+      max-width: 1100px;
+      margin: 120px auto 60px;
+      padding: 40px 30px;
+      background: #1e293b;
+      border-radius: 18px;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .container:hover {
+      box-shadow: 0 8px 35px rgba(56, 189, 248, 0.25);
+    }
+
+    .container h1 {
+      font-size: 2.4em;
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .container p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      margin: 12px 0;
+      color: #cbd5e1;
+    }
+
+    .highlight {
+      color: #facc15;
+      font-weight: 600;
+    }
+
+    /* 🔹 معرض الصور */
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.45);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .project-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+    }
+
+    /* 🔹 زر الرجوع */
+    .btn-back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 30px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.35s ease;
+      box-shadow: 0 6px 15px rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-back:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.45);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px;
+      }
+      .container h1 {
+        font-size: 1.8em;
+      }
+      .project-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔹 شريط علوي -->
+  <header>
+    <h2>Project Details</h2>
+  </header>
+
+  <!-- 🔹 المحتوى -->
+  <div class="container">
+    <h1>📊 Dev Books Dashboard</h1>
+    <p>
+      The <span class="highlight">Dev Books Dashboard</span> provides clear insights into
+      <strong>book sales, customer behavior, and revenue trends</strong>.  
+      It helps businesses make <span class="highlight">data-driven decisions</span> by identifying patterns in sales performance and customer engagement.
+    </p>
+
+    <p>
+      Using <span class="highlight">Power BI</span> and <span class="highlight">Excel</span>,  
+      the dashboard integrates data from multiple sources to visualize key metrics such as  
+      <em>total revenue, order trends, and customer distribution</em>.
+    </p>
+
+    <p><strong>Technologies Used:</strong> Power BI, Excel</p>
+    <p><strong>Category:</strong> Data Analysis & Visualization</p>
+
+    <!-- 🔹 معرض الصور -->
+    <div class="project-gallery">
+      <img src="./Screenshot 2025-09-21 090004.png" alt="Dev Books Dashboard Overview">
+      <img src="./Screenshot 2025-09-21 090050.png" alt="Dev Books Dashboard Details">
+    </div>
+
+    <!-- 🔹 زر العودة -->
+    <a href="../index.html#projects" class="btn-back">⬅ Back to Projects</a>
+  </div>
+</body>
+</html>
