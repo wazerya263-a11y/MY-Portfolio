@@ -1201,3 +1201,49 @@ section {
   line-height: 1.6;
   color: #cbd5e1;
 }
+/* الموبايل */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .main h2 {
+    font-size: 22px;
+  }
+
+  .main h3 {
+    font-size: 16px;
+  }
+
+  .services-container, .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-card img {
+    max-height: 250px;
+  }
+}
+
+/* الأجهزة الصغيرة جدًا */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .main h2 span {
+    font-size: 1.2rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1rem;
+    margin: 5px;
+  }
+}
+
