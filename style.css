@@ -1201,49 +1201,79 @@ section {
   line-height: 1.6;
   color: #cbd5e1;
 }
-/* الموبايل */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
+/* جعل الموقع متجاوب مع الشاشات الصغيرة */
+@media (max-width: 1024px) {
   .navigation a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .main h2 {
-    font-size: 22px;
-  }
-
-  .main h3 {
+    margin: 8px;
     font-size: 16px;
   }
 
-  .services-container, .content {
+  section {
+    padding: 50px 20px;
+  }
+
+  .services-container,
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
     align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .main h3 {
+    font-size: 18px;
+  }
+
+  .services-container,
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header a.logo {
+    font-size: 20px;
+  }
+
+  .main h2 span {
+    font-size: 22px;
+  }
+
+  .main-btn {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 
   .certificate-card img {
     max-height: 250px;
   }
 }
-
-/* الأجهزة الصغيرة جدًا */
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.4rem;
-  }
-
-  .main h2 span {
-    font-size: 1.2rem;
-  }
-
-  footer .social-icons a {
-    font-size: 1rem;
-    margin: 5px;
-  }
-}
-
